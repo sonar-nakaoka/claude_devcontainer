@@ -1,0 +1,21 @@
+{
+  "name": "sotetsu-cypress-new",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "workspaceFolder": "/workspaces/examples/path",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "mounts": [
+    "source=claude-code-userdata,target=/home/vscode/.claude,type=volume"
+  ],
+  "postCreateCommand": "/workspaces/examples/path/.devcontainer/post_create.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
+      ]
+    }
+  }
+}
