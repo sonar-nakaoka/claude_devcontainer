@@ -30,7 +30,7 @@ sudo chown -R $USER:$USER ~/.claude
 setup_claude_config_persistence
 
 # Claude Code
-claude install
+npm install -g @anthropic-ai/claude-code
 
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 
