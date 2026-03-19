@@ -29,13 +29,8 @@ sudo chown -R $USER:$USER ~/.claude
 
 setup_claude_config_persistence
 
-
-
-## Claude用ディレクトリ作成と権限付与
- sudo chown -R $USER:$USER ~/.claude
 # Claude Code
-curl -fsSL https://claude.ai/install.sh | bash
-
+claude install
 
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 

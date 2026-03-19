@@ -1,15 +1,16 @@
 {
-  "name": "sotetsu-cypress-new",
+  // {sample-devcontainer} という文字列をプロジェクト名に置き換えてください(.claude/settings.local.jsonにも同様の置換が必要です)
+  "name": "{sample-devcontainer}",
   "image": "mcr.microsoft.com/devcontainers/base:bookworm",
-  "workspaceFolder": "/workspaces/examples/path",
+  "workspaceFolder": "/workspaces/{sample-devcontainer}/path",
   "features": {
     "ghcr.io/devcontainers/features/node:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "mounts": [
-    "source=claude-code-userdata,target=/home/vscode/.claude,type=volume"
+    "source=claude-code-userdata-{sample-devcontainer},target=/home/vscode/.claude,type=volume"
   ],
-  "postCreateCommand": "/workspaces/examples/path/.devcontainer/post_create.sh",
+  "postCreateCommand": "/workspaces/{sample-devcontainer}/path/.devcontainer/post_create.sh",
   "customizations": {
     "vscode": {
       "extensions": [
