@@ -1,4 +1,9 @@
 {
+  "model": "claude-opus-4-7",
+  "env": {
+    "CLAUDE_CODE_EFFORT_LEVEL": "xhigh"
+  },
+  "tui": "fullscreen",
   "statusLine": {
     "type": "command",
     "command": "bash /workspaces/{sample-devcontainer}/.claude/statusline-command.sh"
